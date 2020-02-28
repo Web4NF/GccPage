@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
+  font-size: 14px;
+}
+
+
 /* 解决使用vh时出现x向滚动条 */
 html {
   overflow-y: scroll;
@@ -17,12 +26,20 @@ body {
   overflow: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
-  font-size: 14px;
+
+/* 通用样式  */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 所有section都按grid布局 */
+section {
+  display: grid;
+  /* 单元格都居中对齐 */
+  justify-items: center;
+  max-width: 1200px;
 }
 
 /* 图片默认宽度100% */

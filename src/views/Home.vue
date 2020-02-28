@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Gheader />
+    <Hheader />
     <Banner />
     <!-- 内容容器 -->
     <div class="content-wrapper">
@@ -131,20 +131,21 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import Gheader from "@/components/Gheader.vue";
+// 引入首页头部组件
+import Hheader from "../components/Header/HomeHeader";
+// 引入第一次轮播组件
 import Banner from "../components/Banner.vue";
+// 引入成功案例轮播组件
 import CaseBanner from "../components/CaseBanner.vue";
+// 引入新闻资讯轮播组件
 import NewsBanner from "../components/NewsBanner.vue";
-import Gfooter from "../components/Gfooter.vue";
 
 export default {
   components: {
-    Gheader,
+    Hheader,
     Banner,
     CaseBanner,
-    NewsBanner,
-    Gfooter
+    NewsBanner
   },
   data() {
     return {};
@@ -152,23 +153,24 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+@font-face {
+  font-family: "iconfont"; /* project id 1661801 */
+  src: url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.eot");
+  src: url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.woff") format("woff"),
+    url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_1661801_oi1op7r54gl.svg#iconfont") format("svg");
+}
+
+.icon {
+  font-family: "iconfont" !important;
+  font-style: normal;
+}
+
 /* ============= 内容区域 ================== */
-
-/* 通用样式  */
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 所有section都按grid布局 */
-section {
-  display: grid;
-  /* 单元格都居中对齐 */
-  justify-items: center;
-  max-width: 1200px;
-}
 
 /* 区域大标题 */
 .title1 {
