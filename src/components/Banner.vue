@@ -36,8 +36,8 @@
     </div>
     <!-- glide 控制按钮 -->
     <div class="glide__arrows" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
     </div>
     <!-- glide 控制圆点 -->
     <div class="glide__bullets" data-glide-el="controls[nav]">

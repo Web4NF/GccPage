@@ -28,12 +28,12 @@
           class="glide__arrow glide__arrow--left"
           data-glide-dir="<"
           style="background:rgba(200, 200, 200, .5)"
-        ><</button>
+        >&lt;</button>
         <button
           class="glide__arrow glide__arrow--right"
           data-glide-dir=">"
           style="background:rgba(200, 200, 200, .5)"
-        >></button>
+        >&gt;</button>
       </div>
     </div>
   </div>
